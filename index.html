@@ -107,7 +107,7 @@
 <script>
 // ============ SETTINGS ============
 // Paste your Google Apps Script web-app URL here (see setup steps). Leave empty to test locally.
-const ENDPOINT = "";
+const ENDPOINT = "https://script.google.com/macros/s/AKfycbyxpe632P4INnFLty2NeBf4MWh7OVnG0blB3-ToEoQWf01j4d8TcLCW-AQ3nGDnt6ZM/exec";
 const VALUES = [
   { key:"equality", short:"Equality",   label:"Equality / social welfare",          lines:["Equality / social welfare"],
     desc:"Everyone should have access to sufficient, affordable food.", color:"#3fb58a" },
@@ -234,7 +234,7 @@ function buildCard(plot) {
     <p class="status" aria-live="polite"></p>`;
   document.getElementById("plots").appendChild(el);
 
-  const svg = el.querySelector("svg"), dot = el.querySelector(".dot"), btn = el.querySelector("button"), status = el.querySelector(".status");
+  const svg = el.querySelector('svg[role="img"]'), dot = el.querySelector(".dot"), btn = el.querySelector("button"), status = el.querySelector(".status");
   const st = { chosen:null, done:false, busy:false };
 
   function show(w, at) {
