@@ -1,1 +1,325 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"/><link rel="shortcut icon" href="./favicon.ico"/><meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate"/><meta http-equiv="Pragma" content="no-cache"/><meta http-equiv="Expires" content="0"/><meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no"/><meta name="theme-color" content="#000000"/><title>Office Scripts</title><script>var url=window.location.href,isLocal=0===url.indexOf("https://localhost:3003/");window.OsfOptOut=isLocal,window.useAssociatedActionsOnly=!0</script><style>*,::after,::before{padding:0;margin:0;-webkit-box-sizing:inherit;box-sizing:inherit}html{font-size:62.5%}body{font-family:"Segoe UI Web (Arabic)","Segoe UI",-apple-system,BlinkMacSystemFont,Roboto,"Helvetica Neue",sans-serif!important;color:#323b3a;font-size:14px;-webkit-box-sizing:border-box;box-sizing:border-box;overscroll-behavior-y:none;background-color:#fff;overflow:hidden}#loadingWrapper{background:#f5f5f5;width:100%;height:100%;position:absolute}#loading{position:absolute;z-index:2000000;color:#212121;background:#f5f5f5;height:100%;width:100%;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}#loading>img{height:120px;margin-bottom:15px}#loading>h1{color:#666;margin-top:10px;margin-bottom:10px;margin-left:8px}#loading>h2{color:#999;max-width:250px;text-align:center}#loading>a{color:#999!important;margin-top:10px}@media only screen and (max-width:500px){#loading>pre{padding:0 30px}}#loading>.loading-indicator{-webkit-box-sizing:border-box;box-sizing:border-box;text-align:center;border:2px solid #9fcdb3;border-top:2px solid #217346;border-radius:50%;width:30px;height:30px;animation:loading-animation 1s linear infinite}@-webkit-keyframes loading-animation{0%{transform:rotate(0)}100%{transform:rotate(360deg)}}@keyframes loading-animation{0%{transform:rotate(0)}100%{transform:rotate(360deg)}}#errorRoot{height:100%;width:100%;display:block;padding:0 1.6rem 1.6rem;background:#f5f5f5;height:100vh;min-height:100vh;width:100%;display:flex;flex-direction:column}#errorRoot label{display:block;padding-top:5px;padding-bottom:5px}#errorRoot #errorHeader{font-size:15px;font-weight:600}#errorRoot #errorDescription{font-size:12px}#errorRoot #errorFooter{font-size:12px}#errorRoot .endJustifiedFlexWrapper{width:100%;display:flex;justify-content:flex-end}#errorRoot button{background-color:#217346;color:#fff;font-size:12px;font-weight:600;min-width:80px;height:2.6rem;border-color:transparent;outline:transparent;border-width:1px;border-radius:2px;margin-top:2.4rem}#errorRoot button:hover{background-color:#0f522d}#errorRoot button:active{background-color:#084121}#errorRoot pre{font-size:100%;color:#999;margin-top:10px;max-height:50%;max-width:100%;padding:0 80px;word-break:break-all;white-space:pre-wrap;overflow-y:auto}</style><meta name="Content-Security-Policy" content="default-src 'none' ; script-src 'self' 'unsafe-inline' https://alcdn.msauth.net https://appsforoffice.microsoft.com ; img-src 'self' data: ; style-src 'unsafe-inline' ; font-src 'self' data: https://res-1.cdn.office.net https://spoprod-a.akamaihd.net ; frame-src 'self' *.test.arbitraryrunner.com *.runtime.arbitraryrunner.com *.officescripts.microsoftusercontent.com *.gcc.officescripts.microsoftusercontent.com https://telemetryservice.firstpartyapps.oaspapps.com https://login.microsoftonline.com https://microsoft-onmicrosoft-com.access.mcas.ms ; connect-src 'self' https://api.test.arbitraryrunner.com https://api.runtime.arbitraryrunner.com https://api.officescripts.microsoftusercontent.com https://api.gcc.officescripts.microsoftusercontent.com https://login.microsoftonline.com https://browser.events.data.microsoft.com https://graph.microsoft.com https://graph.svc.sovcloud.fr https://*.powerautomate.com https://*.events.data.microsoft.com https://*.api.flow.microsoft.com https://res.cdn.office.net https://login.live.com https://*.access.mcas.ms https://*.access.mcas-gov.ms https://eu-mobile.events.data.microsoft.com https://microsoft-my.sharepoint-df.com ; require-trusted-types-for 'script' ; trusted-types script-url#webpack officejs officejs-domparser officejs-url ;"><script defer="defer">(()=>{"use strict";var e={},t={};function r(a){var c=t[a];if(void 0!==c)return c.exports;var d=t[a]={id:a,loaded:!1,exports:{}};return e[a].call(d.exports,d,d.exports,r),d.loaded=!0,d.exports}r.m=e,r.amdO={},(()=>{var e=[];r.O=(t,a,c,d)=>{if(!a){var o=1/0;for(i=0;i<e.length;i++){a=e[i][0],c=e[i][1],d=e[i][2];for(var f=!0,n=0;n<a.length;n++)(!1&d||o>=d)&&Object.keys(r.O).every((e=>r.O[e](a[n])))?a.splice(n--,1):(f=!1,d<o&&(o=d));if(f){e.splice(i--,1);var b=c();void 0!==b&&(t=b)}}return t}d=d||0;for(var i=e.length;i>0&&e[i-1][2]>d;i--)e[i]=e[i-1];e[i]=[a,c,d]}})(),r.n=e=>{var t=e&&e.__esModule?()=>e.default:()=>e;return r.d(t,{a:t}),t},(()=>{var e,t=Object.getPrototypeOf?e=>Object.getPrototypeOf(e):e=>e.__proto__;r.t=function(a,c){if(1&c&&(a=this(a)),8&c)return a;if("object"==typeof a&&a){if(4&c&&a.__esModule)return a;if(16&c&&"function"==typeof a.then)return a}var d=Object.create(null);r.r(d);var o={};e=e||[null,t({}),t([]),t(t)];for(var f=2&c&&a;"object"==typeof f&&!~e.indexOf(f);f=t(f))Object.getOwnPropertyNames(f).forEach((e=>o[e]=()=>a[e]));return o.default=()=>a,r.d(d,o),d}})(),r.d=(e,t)=>{for(var a in t)r.o(t,a)&&!r.o(e,a)&&Object.defineProperty(e,a,{enumerable:!0,get:t[a]})},r.f={},r.e=e=>Promise.all(Object.keys(r.f).reduce(((t,a)=>(r.f[a](e,t),t)),[])),r.u=e=>8227===e?"8227.2685c23d.js":9342===e?"9342.96f561fc.js":2152===e?"2152.1e740448.js":3677===e?"3677.ef424f21.js":1908===e?"1908.15ca2f83.js":({932:"run-from-button",1715:"LocalStorageConsent",2178:"notfound",3275:"LocalStorageWorkbook",3293:"LocalStorageUsers",4261:"office.script.sync",4835:"office.script.synchronous.intellisense.types",5225:"LocalStorageVersion",5560:"LocalStorageAdmin",6008:"editor",7504:"office.script.synchronous.library",7537:"office.script.synchronous.intellisense.synchronous.preview",7594:"about",8456:"office.script.synchronous.intellisense.batch",8773:"power-automate",8943:"office.script.synchronous.intellisense.synchronous",9777:"recorder"}[e]||e)+"."+{50:"81bcfa68",362:"911f4102",402:"b5aa3350",559:"336fae61",564:"82b4bc74",572:"45179b3c",598:"2c8d6961",632:"fe974b99",658:"7c9b90a8",672:"728ee484",738:"2156209d",787:"ac63cfae",865:"7f015726",932:"df6a4b33",962:"519af2f7",968:"72801b8d",974:"380e6dfc",976:"bde3163f",1042:"1eaf8078",1072:"7ebc33f0",1106:"1cb898df",1128:"12c96479",1244:"78d6f28d",1250:"78124570",1299:"7144ba9a",1354:"d36203fb",1374:"9f9d4750",1444:"d2df1f22",1468:"a0e19e50",1514:"9c53a66b",1548:"59e9597f",1551:"8f770198",1634:"49d1a06f",1674:"d0808f02",1715:"a5540e66",1717:"cd7a5ac0",1770:"98549e90",1790:"29f1e6ac",1859:"ec0ad7a1",1994:"fba1019d",2156:"8506bde7",2178:"aaad3989",2200:"31430d99",2210:"6d74fbd2",2326:"023a960b",2338:"b2bdbd47",2362:"a56274f4",2369:"080c6073",2442:"cdd85337",2481:"59659a12",2573:"fb0d5cd9",2653:"a03c12c5",2674:"81ec70db",2870:"2aad0acf",3039:"cf8eaace",3076:"456f31d9",3126:"8edae53d",3164:"b8defe47",3201:"ee515e44",3205:"0c345b56",3215:"fa4c1278",3275:"a6e7bf8f",3282:"177de2a6",3293:"ac939ba3",3329:"013473a0",3420:"30727216",3430:"c8382908",3700:"ec88b107",3763:"8d5ccb2d",3892:"095a7f92",4016:"2f18301c",4058:"c450e201",4094:"776a3f68",4128:"4b681774",4170:"b44717c5",4183:"19c277cd",4210:"41f27a4a",4240:"4ba80ca6",4261:"b8dd2068",4346:"6ab37e06",4358:"c8125f73",4470:"09ba3d57",4474:"bfd40637",4517:"1cd1e537",4642:"aa4d3d64",4751:"615738df",4754:"905d2606",4770:"a10e8b96",4782:"02123cad",4822:"757f6675",4835:"fed22594",4930:"87f6cbb8",5031:"de269b3c",5058:"8e83f4c3",5092:"99f31446",5142:"ebb12d06",5156:"be841e8e",5164:"d2f5f0d2",5225:"f60306da",5318:"9ef07e23",5346:"0f3ac710",5352:"d8ef9633",5354:"eb732b35",5420:"af4e5929",5473:"80aefe81",5520:"bdf31206",5560:"1fef5e92",5621:"c8de6bab",5662:"d3b2e80a",5758:"eec2b250",5874:"a1c9a3fe",5891:"a72e8bea",5902:"763fbdbb",5916:"fdd0b61a",5953:"9f231df9",6008:"6abb25b2",6026:"d1eb290b",6034:"387cf54a",6077:"a7fea51e",6082:"6eaf6a22",6128:"956a4728",6130:"6f6abd14",6188:"de3de6b8",6295:"05707c09",6444:"882d5924",6471:"48bfe58c",6510:"9c45525b",6561:"5614efdb",6592:"a43f01f0",6608:"06a0276c",6676:"79b714f6",6738:"182e4401",6748:"c19c0c98",6786:"9f25b074",6898:"54fde2c4",6900:"1bed1f33",6981:"cd3c506b",7244:"afd8c45c",7254:"a369c600",7374:"d4b8329f",7397:"2e79864e",7421:"b1e4dfaa",7432:"6fb543f0",7498:"e65ec1a2",7504:"29fa7b01",7537:"5b881c8e",7594:"6b36017e",7694:"86d438db",7771:"0724e576",7801:"4cca5601",7868:"ce781019",7873:"fe158bce",7886:"83ce6ecc",7911:"0c190541",7925:"cc8d1b5f",7940:"11dc4b21",7952:"37b6a30e",8006:"059d55f2",8172:"5587b14c",8196:"e26c8974",8206:"7cc9a0ed",8226:"118367fb",8314:"48c2670f",8328:"db1e50cd",8346:"fb28d2d8",8428:"57a947ac",8456:"e5dc90cd",8566:"c1bc1b99",8574:"1d307fa4",8595:"6a3e396a",8688:"deb42570",8752:"29b52b4d",8773:"07703f01",8811:"6c6066a1",8834:"575a2f56",8888:"e5e58d65",8943:"82ffd9b9",8962:"32d79b90",8974:"19f8ef81",9108:"3801bdab",9110:"a220c993",9118:"e061e68a",9185:"80852e95",9246:"49585332",9306:"259f971e",9327:"e2d75698",9347:"fe231337",9441:"1d71376d",9442:"4bcb482a",9450:"90a0999a",9520:"80e36384",9559:"94f74d3e",9618:"b98ea1d7",9682:"86f43b61",9698:"874fa7df",9730:"921100d5",9777:"d8c72eb0",9819:"2a23e98d",9858:"863f089b",9958:"f23c0617"}[e]+".chunk.js",r.miniCssF=e=>"static/css/"+e+".9095b267.chunk.css",r.g=function(){if("object"==typeof globalThis)return globalThis;try{return this||new Function("return this")()}catch(e){if("object"==typeof window)return window}}(),r.hmd=e=>((e=Object.create(e)).children||(e.children=[]),Object.defineProperty(e,"exports",{enumerable:!0,set:()=>{throw new Error("ES Modules may not assign module.exports or exports.*, Use ESM export syntax, instead: "+e.id)}}),e),r.o=(e,t)=>Object.prototype.hasOwnProperty.call(e,t),(()=>{var e={},t="maker-code-editor:";r.l=(a,c,d,o)=>{if(e[a])e[a].push(c);else{var f,n;if(void 0!==d)for(var b=document.getElementsByTagName("script"),i=0;i<b.length;i++){var s=b[i];if(s.getAttribute("src")==a||s.getAttribute("data-webpack")==t+d){f=s;break}}f||(n=!0,(f=document.createElement("script")).charset="utf-8",f.timeout=120,r.nc&&f.setAttribute("nonce",r.nc),f.setAttribute("data-webpack",t+d),f.src=r.tu(a)),e[a]=[c];var l=(t,r)=>{f.onerror=f.onload=null,clearTimeout(u);var c=e[a];if(delete e[a],f.parentNode&&f.parentNode.removeChild(f),c&&c.forEach((e=>e(r))),t)return t(r)},u=setTimeout(l.bind(null,void 0,{type:"timeout",target:f}),12e4);f.onerror=l.bind(null,f.onerror),f.onload=l.bind(null,f.onload),n&&document.head.appendChild(f)}}})(),r.r=e=>{"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},(()=>{var e;r.tt=()=>{if(void 0===e&&(e={createScriptURL:e=>e},"undefined"!=typeof trustedTypes&&trustedTypes.createPolicy))try{e=trustedTypes.createPolicy("script-url#webpack",e)}catch(e){console.warn('Could not create trusted-types policy "script-url#webpack"')}return e}})(),r.tu=e=>r.tt().createScriptURL(e),r.p="./",(()=>{var e=e=>new Promise(((t,a)=>{var c=r.miniCssF(e),d=r.p+c;if(((e,t)=>{for(var r=document.getElementsByTagName("link"),a=0;a<r.length;a++){var c=(o=r[a]).getAttribute("data-href")||o.getAttribute("href");if("stylesheet"===o.rel&&(c===e||c===t))return o}var d=document.getElementsByTagName("style");for(a=0;a<d.length;a++){var o;if((c=(o=d[a]).getAttribute("data-href"))===e||c===t)return o}})(c,d))return t();((e,t,r,a)=>{var c=document.createElement("link");c.rel="stylesheet",c.type="text/css",c.onerror=c.onload=d=>{if(c.onerror=c.onload=null,"load"===d.type)r();else{var o=d&&("load"===d.type?"missing":d.type),f=d&&d.target&&d.target.href||t,n=new Error("Loading CSS chunk "+e+" failed.\n("+f+")");n.code="CSS_CHUNK_LOAD_FAILED",n.type=o,n.request=f,c.parentNode.removeChild(c),a(n)}},c.href=t,document.head.appendChild(c)})(e,d,t,a)})),t={4577:0};r.f.miniCss=(r,a)=>{t[r]?a.push(t[r]):0!==t[r]&&{1548:1}[r]&&a.push(t[r]=e(r).then((()=>{t[r]=0}),(e=>{throw delete t[r],e})))}})(),(()=>{r.b=document.baseURI||self.location.href;var e={4577:0};r.f.j=(t,a)=>{var c=r.o(e,t)?e[t]:void 0;if(0!==c)if(c)a.push(c[2]);else if(4577!=t){var d=new Promise(((r,a)=>c=e[t]=[r,a]));a.push(c[2]=d);var o=r.p+r.u(t),f=new Error;r.l(o,(a=>{if(r.o(e,t)&&(0!==(c=e[t])&&(e[t]=void 0),c)){var d=a&&("load"===a.type?"missing":a.type),o=a&&a.target&&a.target.src;f.message="Loading chunk "+t+" failed.\n("+d+": "+o+")",f.name="ChunkLoadError",f.type=d,f.request=o,c[1](f)}}),"chunk-"+t,t)}else e[t]=0},r.O.j=t=>0===e[t];var t=(t,a)=>{var c,d,o=a[0],f=a[1],n=a[2],b=0;if(o.some((t=>0!==e[t]))){for(c in f)r.o(f,c)&&(r.m[c]=f[c]);if(n)var i=n(r)}for(t&&t(a);b<o.length;b++)d=o[b],r.o(e,d)&&e[d]&&e[d][0](),e[d]=0;return r.O(i)},a=self.webpackChunkmaker_code_editor=self.webpackChunkmaker_code_editor||[];a.forEach(t.bind(null,0)),a.push=t.bind(null,a.push.bind(a))})(),r.nc=void 0})()</script><script defer="defer" src="./1633.c59253eb.js"></script><script defer="defer" src="./7791.45cac45f.js"></script><script defer="defer" src="./603.fb28284e.js"></script><script defer="defer" src="./3188.b6e5ea50.js"></script><script defer="defer" src="./main.8f3b7713.js"></script><link href="./static/css/main.cc196895.css" rel="stylesheet"></head><body class="ms-Fabric"><noscript>You need to enable JavaScript to enable this functionality.</noscript><div id="errorRoot" style="display:none"><label id="errorHeader" class="ms-label">Error</label> <label id="errorDescription" class="ms-label">An unexpected error occurred.</label> <button id="feedbackButton" style="display:none" class="ms-button" onclick='OfficeFirstParty.UserFeedback.CollectUserFeedback(3,1,"Extensibility\\Office Scripts",{})'><label id="feedBackText"></label></button> <label id="errorFooter" class="ms-label"></label><div class="endJustifiedFlexWrapper"><button id="refreshButton" class="ms-button" onclick="location.reload(!0)">Refresh</button></div></div><div id="loadingWrapper"><div id="loading" style="visibility:hidden"><div class="loading-indicator"></div><h2 class="ms-font-m"></h2></div></div><div id="root"></div></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>What matters most? 2026 and 2060</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,400;1,9..144,600&family=Instrument+Sans:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  :root { --bg1:#0d3b2e; --bg2:#14365a; --ink:#e4f3ee; --muted:#9cc2b8; --green:#3fb58a; --blue:#4aa3e8; --line:rgba(228,243,238,.22); }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body { margin:0; color:var(--ink); font-family:"Instrument Sans",system-ui,sans-serif; line-height:1.55;
+         background:var(--bg1); min-height:100vh; }
+  main { position:relative; z-index:1; max-width:1040px; margin:0 auto; padding:3rem 1.25rem 4rem; }
+  h1 { font-family:Fraunces,Georgia,serif; font-weight:600; font-size:clamp(2.6rem,8vw,5.2rem); line-height:1.05; margin:0 0 1rem; letter-spacing:-.02em; }
+  h1 span { color:#8bd36a; font-style:italic; }
+  .course { margin:0 0 .25rem; font-weight:600; color:#8bd36a; }
+  .team { margin:0 0 1.5rem; color:var(--muted); }
+  .thanks { margin:2rem 0 0; padding:1.25rem 1.5rem; border-radius:18px; background:#8bd36a; color:#06251f; font-weight:600; font-size:1.1rem; text-align:center; }
+  .hint { margin:-1rem 0 2rem; color:var(--muted); font-size:.95rem; }
+  .vlabel text, .help { cursor:help; text-decoration:underline dotted rgba(228,243,238,.6); text-underline-offset:4px; }
+  .vlabel:focus-visible { outline:none; } .vlabel:focus-visible text { fill:#8bd36a; }
+  .help:focus-visible { outline:2px solid var(--blue); outline-offset:2px; border-radius:4px; }
+  #tip { position:fixed; z-index:10; max-width:min(280px,calc(100vw - 16px)); padding:.75rem 1rem; border-radius:14px; background:#e4f3ee; color:#06251f; font-size:.95rem; line-height:1.4; box-shadow:0 4px 14px rgba(0,0,0,.35); pointer-events:none; }
+  .scenario { margin:0 0 1.25rem; padding:.9rem 1.1rem; background:var(--bg1); border-left:4px solid #8bd36a; border-radius:6px 16px 16px 6px; }
+  .scenario h3 { margin:0 0 .35rem; font-size:.8rem; letter-spacing:.08em; text-transform:uppercase; color:#8bd36a; }
+  .scenario p { margin:0; font-size:.92rem; }
+  .blobs { position:fixed; inset:0; width:100%; height:100%; z-index:0; pointer-events:none; }
+  body::after { content:""; position:fixed; inset:0; z-index:0; pointer-events:none; opacity:.06;
+    background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 .6 0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>"); }
+  .card::before { content:attr(data-year); position:absolute; right:.4rem; bottom:-1.7rem; z-index:0; pointer-events:none;
+    font-family:Fraunces,Georgia,serif; font-weight:600; font-size:8rem; line-height:1; color:#1a4672; }
+  .card > * { position:relative; z-index:1; }
+  .field { display:block; width:calc(100% + 3rem); height:88px; margin:-1.5rem -1.5rem 1.25rem; }
+  .vlabel text { transition:fill .2s; }
+  .vlabel.near text { fill:#8bd36a; }
+  .ripple { opacity:0; }
+  .dot.go .pop { animation:pop .38s cubic-bezier(.3,1.6,.5,1); }
+  .dot.go .ripple { animation:ripple .65s ease-out; }
+  @keyframes pop { from { transform:scale(.3); } to { transform:scale(1); } }
+  @keyframes ripple { from { transform:scale(1); opacity:.9; } to { transform:scale(4.5); opacity:0; } }
+  @media (prefers-reduced-motion:reduce) { .dot.go .pop, .dot.go .ripple { animation:none; } }
+  .thanks p { margin:0; }
+  .cmp-title { margin:1.25rem 0 0 !important; font-size:.95rem; }
+  .minis { display:flex; flex-wrap:wrap; gap:1.25rem; justify-content:center; margin-top:.75rem; }
+  .mini { margin:0; width:min(100%,270px); }
+  .mini figcaption { font-size:.9rem; margin-top:.35rem; }
+  .mini small { display:block; font-weight:400; font-size:.8rem; }
+  .lede { max-width:56ch; color:var(--muted); font-size:1.08rem; margin:0 0 2rem; }
+  .id-box { display:flex; flex-wrap:wrap; gap:.75rem; align-items:center; padding:1rem 1.25rem; border:1px solid var(--line); border-radius:18px; background:var(--bg2); border-color:transparent; margin-bottom:2.5rem; }
+  .id-box label { font-weight:600; }
+  .id-box input { flex:1 1 240px; padding:.65rem .9rem; font:inherit; color:var(--ink); background:var(--bg1); border:1px solid var(--line); border-radius:12px; }
+  .id-box input:focus-visible, button:focus-visible { outline:2px solid var(--blue); outline-offset:2px; }
+  .id-box small { flex-basis:100%; color:var(--muted); }
+  .plots { align-items:start; display:grid; grid-template-columns:repeat(auto-fit,minmax(min(100%,440px),1fr)); gap:1.75rem; }
+  .card { padding:1.5rem; border:1px solid var(--line); border-radius:28px 28px 28px 6px; background:var(--bg2); border-color:transparent; transition:opacity .3s; position:relative; overflow:hidden; }
+  .card.locked { opacity:.5; }
+  .card h2 { font-family:Fraunces,Georgia,serif; font-weight:400; font-size:clamp(1.7rem,4.5vw,2.2rem); margin:0; line-height:1; }
+  .card p.sub { margin:.25rem 0 1rem; color:var(--muted); }
+  svg { width:100%; height:auto; display:block; touch-action:manipulation; }
+  svg.live { cursor:crosshair; }
+  .bars { display:grid; gap:.45rem; margin:1rem 0; font-size:.95rem; }
+  .bar { display:grid; grid-template-columns:11.5rem 1fr 3rem; align-items:center; gap:.6rem; }
+  .bar i { display:block; height:8px; border-radius:8px; background:var(--bg1); overflow:hidden; }
+  .bar i b { display:block; height:100%; width:0; border-radius:8px; transition:width .25s; }
+  .bar span:last-child { text-align:right; font-variant-numeric:tabular-nums; }
+  button.go { padding:.75rem 1.5rem; font:inherit; font-weight:600; color:#04201a; border:0; border-radius:999px; cursor:pointer; background:#8bd36a; }
+  button.go:disabled { opacity:.4; cursor:not-allowed; }
+  .status { margin:.75rem 0 0; min-height:1.5em; color:var(--muted); }
+  .status.ok { color:var(--green); } .status.err { color:#ffb4a8; }
+  footer { margin-top:3rem; color:var(--muted); font-size:.9rem; text-align:center; }
+  @media (prefers-reduced-motion:reduce) { * { transition:none !important; } }
+</style>
+</head>
+<body>
+<svg class="blobs" viewBox="0 0 1200 800" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+  <path d="M-80 520 C120 420 330 470 420 620 S600 860 300 900 L-80 900Z" fill="#115040"/>
+  <path d="M760 -40 C920 60 1010 160 1000 280 S1180 420 1300 330 L1300 -40Z" fill="#123f5c"/>
+  <path d="M900 880 C940 740 1080 700 1220 740 L1220 880Z" fill="#115040"/>
+</svg>
+
+<main>
+  <p class="course">MIS20070 group project</p>
+  <p class="team">By Phebe, Sofie, Bianka, Claire and Evie</p>
+  <h1>What matters most, <span>then and now?</span></h1>
+  <p class="lede">Place one dot in each triangle to show how you think society prioritises these three values. The closer your dot is to a corner, the more that value is prioritised.</p>
+
+  
+  <p class="hint">Taking part is voluntary and takes about a minute. Hover over (or tap) a value name to see what it means.</p>
+
+  <div class="id-box">
+    <label for="rid">Your email</label>
+    <input id="rid" type="email" autocomplete="email" placeholder="you@example.com">
+    <small>Your responses are anonymous. Your email is only used to stop duplicate submissions and is not saved with your answers. Answers can't be changed after you submit.</small>
+  </div>
+
+  <div class="plots" id="plots"></div>
+  <div class="thanks" id="thanks" hidden><p>Thank you for participating! Both of your responses have been recorded.</p><div id="compare"></div></div>
+
+    <footer>This survey is a group project for MIS20070. Thank you for taking part!</footer>
+</main>
+
+<div id="tip" role="tooltip" hidden></div>
+
+<script>
+// ============ SETTINGS ============
+// Paste your Google Apps Script web-app URL here (see setup steps). Leave empty to test locally.
+const ENDPOINT = "";
+const VALUES = [
+  { key:"equality", short:"Equality",   label:"Equality / social welfare",          lines:["Equality / social welfare"],
+    desc:"Everyone should have access to sufficient, affordable food.", color:"#3fb58a" },
+  { key:"technology", short:"Technology", label:"Technological efficiency / progress", lines:["Technological efficiency /","progress"],
+    desc:"AI should be used to maximise production, reduce waste and manage resources effectively.", color:"#4aa3e8" },
+  { key:"economy", short:"Economy",    label:"Economic freedom / prosperity",       lines:["Economic freedom /","prosperity"],
+    desc:"Farmers and companies should be able to make economic decisions and benefit financially from agriculture.", color:"#e0b84a" }
+];
+const PLOTS = [
+  { id:"present", year:2026, title:"2026", heading:"Present day: 2026", sub:"How do you think society currently prioritises these three values?" },
+  { id:"future",  year:2060, title:"2060", heading:"Future: 2060", sub:"How do you think these values will be prioritised in the future world described below?",
+    scenario:"By 2060, AI has transformed agriculture into a highly automated and efficient industry. Governments and large tech-companies would work with farmers to produce both traditional and synthetic food. Meanwhile, AI manages global resources more efficiently which leads to reduction in waste and inequality. Basic food is provided free or at extremely low cost to people below a certain income level, helping to end world hunger and support those experiencing homelessness. At the same time, farmers remain essential through cooperation with AI, receiving subsidies funded by technology companies and governments. As agriculture becomes less dependent on profit, the industry is increasingly judged by how effectively it can feed people across all economic backgrounds." }
+];
+// ==================================
+
+// Triangle geometry (viewBox 0 0 440 380)
+const P = [ {x:220,y:46}, {x:60,y:322}, {x:380,y:322} ];
+const pt = w => ({ x: w[0]*P[0].x + w[1]*P[1].x + w[2]*P[2].x, y: w[0]*P[0].y + w[1]*P[1].y + w[2]*P[2].y });
+function bary(x, y) {
+  const d = (P[1].y-P[2].y)*(P[0].x-P[2].x) + (P[2].x-P[1].x)*(P[0].y-P[2].y);
+  const a = ((P[1].y-P[2].y)*(x-P[2].x) + (P[2].x-P[1].x)*(y-P[2].y)) / d;
+  const b = ((P[2].y-P[0].y)*(x-P[2].x) + (P[0].x-P[2].x)*(y-P[2].y)) / d;
+  return [a, b, 1-a-b];
+}
+
+// Gridlines every 20%
+let grid = "";
+for (let k = 0; k < 3; k++) for (const t of [.2,.4,.6,.8]) {
+  const a = [0,0,0], b = [0,0,0]; a[k] = b[k] = t; a[(k+1)%3] = 1-t; b[(k+2)%3] = 1-t;
+  const p = pt(a), q = pt(b);
+  grid += `<line x1="${p.x}" y1="${p.y}" x2="${q.x}" y2="${q.y}"/>`;
+}
+
+const rid = document.getElementById("rid");
+const idKey = () => rid.value.trim().toLowerCase();
+const doneKey = p => "done:" + idKey() + ":" + p.id;
+const safeGet = k => { try { return localStorage.getItem(k); } catch (e) { return null; } };
+const safeSet = (k, v) => { try { localStorage.setItem(k, v); } catch (e) {} };
+const validId = () => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(idKey());
+function updateThanks() {
+  const all = validId() && PLOTS.every(p => safeGet(doneKey(p)) === "1");
+  document.getElementById("thanks").hidden = !all;
+  const cmp = document.getElementById("compare");
+  if (!all) { cmp.innerHTML = ""; return; }
+  const saved = PLOTS.map(p => { try { return JSON.parse(safeGet("val:" + idKey() + ":" + p.id)); } catch (e) { return null; } });
+  cmp.innerHTML = saved.every(Boolean)
+    ? '<p class="cmp-title">Your two answers side by side</p><div class="minis">' + PLOTS.map((p, i) => miniTri(p.id, saved[i], p.heading)).join("") + "</div>"
+    : "";
+}
+
+const TRI = P.map(p => p.x + "," + p.y).join(" ");
+
+// Little farmland banners: winding rows for 2026, straight automated rows for 2060
+const fieldArt = id => id === "present"
+  ? `<svg class="field" viewBox="0 0 400 88" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+      <rect width="400" height="88" fill="#1f5f99"/><circle cx="330" cy="26" r="13" fill="#e0b84a"/>
+      <path d="M0 54 C70 32 140 36 210 48 S340 58 400 40 V88 H0Z" fill="#2a8a64"/>
+      <path d="M0 70 C80 54 170 58 250 66 S350 72 400 62 V88 H0Z" fill="#0d3b2e"/>
+      <g fill="none" stroke="#8bd36a" stroke-width="2" stroke-linecap="round">
+        <path d="M10 62 C90 46 170 48 250 58"/><path d="M40 76 C120 62 200 66 290 74"/><path d="M180 54 C250 50 330 58 395 48"/>
+      </g></svg>`
+  : `<svg class="field" viewBox="0 0 400 88" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+      <rect width="400" height="88" fill="#1f5f99"/><circle cx="330" cy="26" r="13" fill="#e0b84a"/>
+      <rect y="48" width="400" height="40" fill="#0d3b2e"/>
+      <g stroke="#3fb58a" stroke-width="3">${Array.from({length:16}, (_, i) => `<line x1="${12 + i*25}" y1="50" x2="${12 + i*25}" y2="88"/>`).join("")}</g>
+      <g fill="#e0b84a">${Array.from({length:8}, (_, i) => `<rect x="${9 + i*50}" y="58" width="6" height="6"/>`).join("")}</g>
+    </svg>`;
+
+// Small read-only copy of a plot for the thank-you comparison
+const miniTri = (plotId, w, heading) => {
+  const d = pt(w.map(v => v / 100));
+  const pos = [[220, 32, "middle"], [20, 345, "start"], [420, 345, "end"]];
+  return `<figure class="mini"><svg viewBox="0 0 440 352" role="img" aria-label="Your answer for ${heading}">
+      <polygon points="${TRI}" fill="#0d3b2e"/>
+      ${VALUES.map((v, i) => `<polygon points="${TRI}" fill="url(#rg-${plotId}-${i})"/>`).join("")}
+      <polygon points="${TRI}" fill="none" stroke="#06251f" stroke-width="2"/>
+      ${VALUES.map((v, i) => `<text x="${pos[i][0]}" y="${pos[i][1]}" text-anchor="${pos[i][2]}" font-size="20" font-weight="600" fill="#06251f">${v.short}</text>`).join("")}
+      <circle cx="${d.x}" cy="${d.y}" r="13" fill="#e4f3ee" stroke="#06251f" stroke-width="4"/>
+    </svg><figcaption>${heading}<small>${VALUES.map((v, i) => v.short + " " + w[i] + "%").join(" · ")}</small></figcaption></figure>`;
+};
+
+// Hoverable corner labels
+const label = (i, x, y, anchor) => `<g class="vlabel" data-v="${i}" tabindex="0" role="note" aria-label="${VALUES[i].label}: ${VALUES[i].desc}">
+        <text x="${x}" y="${y}" text-anchor="${anchor}" fill="#e4f3ee" font-size="15" font-weight="600">${VALUES[i].lines.map((t, k) => `<tspan x="${x}" dy="${k ? 18 : 0}">${t}</tspan>`).join("")}</text></g>`;
+
+// Scramble the email in the browser so the sheet never receives it
+function cyrb53(str) {
+  let h1 = 0xdeadbeef, h2 = 0x41c6ce57;
+  for (let i = 0; i < str.length; i++) { const c = str.charCodeAt(i); h1 = Math.imul(h1 ^ c, 2654435761); h2 = Math.imul(h2 ^ c, 1597334677); }
+  h1 = Math.imul(h1 ^ (h1 >>> 16), 2246822507) ^ Math.imul(h2 ^ (h2 >>> 13), 3266489909);
+  h2 = Math.imul(h2 ^ (h2 >>> 16), 2246822507) ^ Math.imul(h1 ^ (h1 >>> 13), 3266489909);
+  return (4294967296 * (2097151 & h2) + (h1 >>> 0)).toString(16);
+}
+async function anonId(email) {
+  const text = "mis20070-values|" + email;
+  try {
+    const buf = await crypto.subtle.digest("SHA-256", new TextEncoder().encode(text));
+    return Array.from(new Uint8Array(buf)).map(b => b.toString(16).padStart(2, "0")).join("");
+  } catch (e) { return "x" + cyrb53(text); }
+}
+
+const cards = PLOTS.map(buildCard);
+
+function buildCard(plot) {
+  const el = document.createElement("article");
+  el.className = "card locked"; el.dataset.year = plot.year;
+  el.innerHTML = `
+    ${fieldArt(plot.id)}
+    <h2>${plot.heading}</h2><p class="sub">${plot.sub}</p>
+    ${plot.scenario ? `<div class="scenario"><h3>The 2060 scenario</h3><p>${plot.scenario}</p></div>` : ""}
+    <svg viewBox="0 0 440 380" role="img" aria-label="Ternary plot for ${plot.title}">
+      <defs>${VALUES.map((v, i) => `<radialGradient id="rg-${plot.id}-${i}" gradientUnits="userSpaceOnUse" cx="${P[i].x}" cy="${P[i].y}" r="250"><stop offset="0" stop-color="${v.color}"/><stop offset="1" stop-color="${v.color}" stop-opacity="0"/></radialGradient>`).join("")}</defs>
+      <polygon points="${TRI}" fill="#0d3b2e"/>
+      ${VALUES.map((v, i) => `<polygon points="${TRI}" fill="url(#rg-${plot.id}-${i})"/>`).join("")}
+      <polygon points="${TRI}" fill="none" stroke="#e4f3ee" stroke-opacity=".8" stroke-width="2"/>
+      <g stroke="#e4f3ee" stroke-opacity=".18" stroke-dasharray="3 4">${grid}</g>
+      ${label(0,220,28,"middle")}
+      ${label(1,20,346,"start")}
+      ${label(2,420,346,"end")}
+      <g class="dot" visibility="hidden"><circle class="ripple" r="8" fill="none" stroke="#e4f3ee" stroke-width="2"/><g class="pop"><circle r="14" fill="none" stroke="#e4f3ee" stroke-width="2"/><circle r="7" fill="#e4f3ee" stroke="#0d3b2e" stroke-width="3"/></g></g>
+    </svg>
+    <div class="bars">${VALUES.map((v, i) => `<div class="bar"><span class="help" data-v="${i}" tabindex="0">${v.label}</span><i><b style="background:${v.color}"></b></i><span>0%</span></div>`).join("")}</div>
+    <button class="go" disabled>Submit ${plot.title} response</button>
+    <p class="status" aria-live="polite"></p>`;
+  document.getElementById("plots").appendChild(el);
+
+  const svg = el.querySelector("svg"), dot = el.querySelector(".dot"), btn = el.querySelector("button"), status = el.querySelector(".status");
+  const st = { chosen:null, done:false, busy:false };
+
+  function show(w, at) {
+    VALUES.forEach((v, i) => {
+      const row = el.querySelectorAll(".bar")[i];
+      row.querySelector("b").style.width = w[i] + "%";
+      row.lastElementChild.textContent = w[i] + "%";
+    });
+    svg.querySelectorAll(".vlabel").forEach((g, i) => g.classList.toggle("near", w[i] >= 50));
+    if (at) {
+      dot.setAttribute("transform", `translate(${at.x} ${at.y})`); dot.setAttribute("visibility", "visible");
+      dot.classList.remove("go"); void dot.getBoundingClientRect(); dot.classList.add("go");
+    }
+  }
+  function say(msg, cls) { status.textContent = msg; status.className = "status " + (cls || ""); }
+  function refresh() {
+    updateThanks();
+    st.done = validId() && safeGet(doneKey(plot)) === "1";
+    const open = validId() && !st.done;
+    el.classList.toggle("locked", !open);
+    svg.classList.toggle("live", open);
+    btn.disabled = !(open && st.chosen) || st.busy;
+    if (!validId()) say("Enter your email above to begin.");
+    else if (st.done) say("You have already submitted this one. Thank you!", "ok");
+    else if (!st.chosen) say("Click inside the triangle to place your dot.");
+    else say("Happy with it? You can still move the dot before submitting.");
+  }
+
+  svg.addEventListener("click", ev => {
+    if (!validId() || st.done || st.busy) return;
+    const m = svg.createSVGPoint(); m.x = ev.clientX; m.y = ev.clientY;
+    const p = m.matrixTransform(svg.getScreenCTM().inverse());
+    const w = bary(p.x, p.y);
+    if (w.some(v => v < 0)) return;                    // ignore clicks outside the triangle
+    const r = w.map(v => Math.round(v*100));
+    r[2] = 100 - r[0] - r[1];                          // percentages always sum to 100
+    st.chosen = r; show(r, p); refresh();
+  });
+
+  btn.addEventListener("click", async () => {
+    if (!st.chosen || st.done || st.busy) return;
+    st.busy = true; btn.disabled = true; say("Sending…");
+    const payload = { id:await anonId(idKey()), plot:plot.id, year:plot.year,
+      equality:st.chosen[0], technology:st.chosen[1], economy:st.chosen[2] };
+    try {
+      let res = { ok:true };
+      if (ENDPOINT) {
+        const r = await fetch(ENDPOINT, { method:"POST", headers:{ "Content-Type":"text/plain;charset=utf-8" }, body:JSON.stringify(payload) });
+        res = await r.json();
+      }
+      if (res.ok || res.error === "duplicate") {
+        if (res.ok) safeSet("val:" + idKey() + ":" + plot.id, JSON.stringify(st.chosen));
+        safeSet(doneKey(plot), "1");
+        st.busy = false; refresh();
+        if (!res.ok) say("This email has already submitted for " + plot.title + ".", "err");
+      } else throw new Error(res.error || "failed");
+    } catch (e) {
+      st.busy = false; refresh(); say("Could not send. Check your connection and try again.", "err");
+    }
+  });
+
+  el.refresh = () => { st.chosen = null; dot.setAttribute("visibility", "hidden"); show([0,0,0]); refresh(); };
+  el.refresh();
+  return el;
+}
+
+// Tooltips: hover, keyboard focus, or tap
+const tip = document.getElementById("tip");
+function showTip(el) {
+  const v = VALUES[el.dataset.v];
+  tip.innerHTML = "<b>" + v.label + "</b><br>" + v.desc;
+  tip.hidden = false;
+  const r = el.getBoundingClientRect(), w = tip.offsetWidth, h = tip.offsetHeight;
+  tip.style.left = Math.max(8, Math.min(innerWidth - w - 8, r.left + r.width/2 - w/2)) + "px";
+  tip.style.top = (r.bottom + 10 + h > innerHeight ? r.top - 10 - h : r.bottom + 10) + "px";
+}
+const hideTip = () => { tip.hidden = true; };
+["mouseover", "focusin", "click"].forEach(t => document.addEventListener(t, e => {
+  const el = e.target.closest && e.target.closest("[data-v]");
+  el ? showTip(el) : hideTip();
+}));
+document.addEventListener("focusout", hideTip);
+document.addEventListener("keydown", e => { if (e.key === "Escape") hideTip(); });
+
+rid.addEventListener("input", () => cards.forEach(c => c.refresh()));
+</script>
+</body>
+</html>
